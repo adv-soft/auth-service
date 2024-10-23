@@ -18,7 +18,10 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0'
-
+          
+      - name: Verify .NET installation
+        run: dotnet --version
+      
       - name: Install dependencies
         run: dotnet restore
 

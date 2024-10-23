@@ -24,3 +24,19 @@ jobs:
 
       - name: Build
         run: dotnet build --configuration Release
+        
+  # Deploy
+  Deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build and Push User Service Docker image
+        env:
+          APP_UID: 1000
+        run: |
+          docker build -t timothyaxell/auth-service:v1 ./auth-service
+          echo "@Xel180202" | docker login -u timothyaxell --password-stdin
+          docker push timothyaxell/auth-service:v1

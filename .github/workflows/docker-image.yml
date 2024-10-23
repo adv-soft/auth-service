@@ -37,6 +37,6 @@ jobs:
         env:
           APP_UID: 1000
         run: |
-          docker build -t timothyaxell/auth-service:v1 ./auth-service
+          docker build -t timothyaxell/AuthService:v1 ./AuthService
           echo "@Xel180202" | docker login -u timothyaxell --password-stdin
           docker push timothyaxell/auth-service:v1

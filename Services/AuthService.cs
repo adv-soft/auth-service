@@ -14,23 +14,23 @@ namespace AuthService.Services
 {
     public class AuthService
     {
-        private readonly IConnection _connection;
-        private readonly IModel _channel;
-        private const string QueueName = "user_register_queue";
+        // private readonly IConnection _connection;
+        // private readonly IModel _channel;
+        // private const string QueueName = "user_register_queue";
         private readonly AuthDbContext _context;
         private readonly IConfiguration _config;
         private readonly ConcurrentDictionary<string, string> _refreshTokens = new ConcurrentDictionary<string, string>();
         
         public AuthService(AuthDbContext dbContext, IConfiguration configuration)
         {
-            var factory = new ConnectionFactory() { HostName = "localhost" };
-            _connection = factory.CreateConnection();
-            _channel = _connection.CreateModel();
-            _channel.QueueDeclare(queue: QueueName,
-                durable: false,
-                exclusive: false,
-                autoDelete: false,
-                arguments: null);
+            // var factory = new ConnectionFactory() { HostName = "localhost" };
+            // _connection = factory.CreateConnection();
+            // _channel = _connection.CreateModel();
+            // _channel.QueueDeclare(queue: QueueName,
+            //     durable: false,
+            //     exclusive: false,
+            //     autoDelete: false,
+            //     arguments: null);
 
             _context = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
             _config = configuration ?? throw new ArgumentNullException(nameof(configuration));
@@ -154,11 +154,11 @@ namespace AuthService.Services
             return principal;
         }
         
-        public void Close()
-        {
-            _channel.Close();
-            _connection.Close();
-        }
+        // public void Close()
+        // {
+        //     _channel.Close();
+        //     _connection.Close();
+        // }
 
     }
     

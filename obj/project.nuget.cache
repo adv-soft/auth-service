@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BQxQXpitcQQ=",
+  "dgSpecHash": "Mj+1bOmWG7A=",
   "success": true,
   "projectFilePath": "/Users/timothyaxelwinarto/Fontys/sem6/individual/BE/AuthService/AuthService/AuthService.csproj",
   "expectedPackageFiles": [
@@ -75,10 +75,7 @@
     "/Users/timothyaxelwinarto/.nuget/packages/system.text.encodings.web/9.0.0-rc.1.24431.7/system.text.encodings.web.9.0.0-rc.1.24431.7.nupkg.sha512",
     "/Users/timothyaxelwinarto/.nuget/packages/system.text.json/9.0.0-rc.1.24431.7/system.text.json.9.0.0-rc.1.24431.7.nupkg.sha512",
     "/Users/timothyaxelwinarto/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512",
-    "/Users/timothyaxelwinarto/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512",
-    "/Users/timothyaxelwinarto/.nuget/packages/microsoft.netcore.app.ref/8.0.10/microsoft.netcore.app.ref.8.0.10.nupkg.sha512",
-    "/Users/timothyaxelwinarto/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.10/microsoft.aspnetcore.app.ref.8.0.10.nupkg.sha512",
-    "/Users/timothyaxelwinarto/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.10/microsoft.netcore.app.host.osx-arm64.8.0.10.nupkg.sha512"
+    "/Users/timothyaxelwinarto/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": [
     {
